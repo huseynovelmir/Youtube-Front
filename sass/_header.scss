@@ -1,0 +1,188 @@
+
+
+nav {
+    z-index: 5;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    align-content: center;
+    background-color: #212121;
+
+    .logo {
+        width: 23%;
+        margin-left: 20px;
+        margin-top: 5px;
+
+        button {
+            background-color: #212121;
+            border: solid 1px #212121;
+
+
+            i {
+                color: #FFFFFF;
+                font-size: 20px;
+                margin-right: 30px;
+
+            }
+        }
+
+    }
+
+    .logo:hover {
+        img {
+            cursor: pointer;
+        }
+
+        i {
+            cursor: pointer;
+        }
+    }
+
+
+    .search {
+        width: 60%;
+        display: flex;
+
+        input {
+            width: 80%;
+            height: 40px;
+
+            padding-left: 20px;
+            color: white;
+            border-radius: 3px 0 0 3px;
+            background-color: #121212;
+            border: solid 1px #373737;
+
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        button {
+
+            border-radius: 0 3px 3px 0;
+            width: 50px;
+            margin-left: -5px;
+            height: 40px;
+            box-sizing: border-box;
+            line-height: 28px;
+            border: solid 1px #303030;
+            border-left: solid 1px white;
+            background-color: #202020;
+
+            i {
+
+                text-align: center;
+                color: #808080;
+            }
+        }
+
+
+        .mic-bg {
+
+
+            display: flex;
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            align-items: center;
+            justify-content: center;
+            background-color: #181818;
+            border-radius: 50px;
+
+            i {
+
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+
+    .search:hover {
+        button {
+            cursor: pointer;
+        }
+
+        .mic-bg {
+
+            cursor: pointer;
+
+        }
+    }
+
+    .person-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 15%;
+
+        .person-img {
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .person-area:hover {
+        img {
+            cursor: pointer;
+        }
+    }
+}
+
+#btn:hover {
+
+    +.sidebar-focus {
+        left: 0px;
+
+    }
+
+
+}
+
+
+.caticorys {
+    z-index: 2;
+    width: 100%;
+    padding: 10px 0px;
+    padding-left: 100px;
+    border-top: 1px solid #373737;
+    margin-top: 60px;
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+
+    background-color: #212121;
+
+    .block1 {
+        background-color: #373737;
+        padding: 4px 15px;
+        border-radius: 50px;
+        transition: 0.5s;
+
+        a {
+            text-decoration: none;
+            font-family: 'Roboto';
+            font-style: normal;
+            color: white;
+        }
+    }
+    .block1:nth-child(1){
+        background-color: #FFFFFF;
+      a{
+            color: #373737;
+      }
+    }
+                .block1:nth-child(1):hover {
+                    background-color: #FFFFFF;
+        
+                    a {
+                        color: #373737;
+                    }
+                }
+    .block1:hover{
+        background-color: #514f4f;
+    }
+}
